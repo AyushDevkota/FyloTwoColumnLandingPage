@@ -1,0 +1,123 @@
+@import './config';
+
+body {
+    font-family: $body-font-family;
+    font-size: 15px;
+    line-height: 1.5    ;
+}
+
+header {
+    margin-bottom: 10em;
+    nav {
+        margin-top: 3em;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5em;
+        img {
+            height: 2.25em;
+        }
+        ul {
+            gap: 1em;
+        }
+    }
+    .intro {
+        form {
+            margin-top: 2em;
+            button {
+                font-size: 12px;
+                padding: 0.4em 2em;
+                width: 30%;
+                margin-left: 2em;
+                height: 100%;
+                background-color: $bright-blue;
+                border: none;
+                color: hsl(0, 0, 90%);
+            }
+            input {
+                padding: 0.35em 1em;
+                width: 60%;
+            }
+            ::placeholder {
+                color: hsl(0, 0, 70%);
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+section {
+    img {
+        width: 100%;
+    }
+    .bg-color {
+        background-color: $light-grayish-blue;
+        position: relative;
+        top: -0.35em;
+        .row {
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 5em;
+            .text-area {
+                a {
+                    font-size: 15px;
+                    color: $moderate-cyan;
+                    width: max-content;
+                    border-bottom: 1px solid $moderate-cyan;
+                    i {
+                        margin-left: 0.25em;
+                        height: 0.1em;
+                    }
+                }
+                .card {
+                    margin-top: 3em;
+                    width: 300px;
+                    background-color: #fff;
+                    border-radius: 0.25em;
+                    padding: 1.5em 2em;
+                    font-size: 13px;
+                    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+                    .quote {
+                        height: 1em;
+                        width: 1em;
+                    }
+                    .img-area {
+                        flex-basis: auto;
+                        margin-right: 1em;
+                        img {
+                            height: 3em;
+                            width: 3em;
+                            border-radius: 10em;
+                        }
+                    }
+                    .text-area {
+                        flex-basis: auto;
+                        p {
+                            margin-bottom: 0;
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+aside {
+    background-color: $desaturated-blue;
+    color: #fff;
+    padding: 5em 0;
+    .d-flex {
+        gap: 5em;
+        form {
+            input, button {
+                display: block;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $very-dark-blue;
+    color: #fff;
+    padding: 5em 0;
+}
