@@ -56,7 +56,6 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: red;
 }
 
 .img-area img {
@@ -97,22 +96,27 @@ header nav ul {
 }
 
 header .intro form {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 header .intro form button {
   font-size: 12px;
-  padding: 0.4em 2em;
+  padding: 0.85em 1em;
   width: 30%;
   margin-left: 2em;
   height: 100%;
   background-color: #3065f8;
   border: none;
   color: #e6e6e6;
+  cursor: pointer;
+}
+
+header .intro form button:hover, header .intro form button:focus {
+  background-color: #628af9;
 }
 
 header .intro form input {
-  padding: 0.35em 1em;
+  padding: 0.85em 1em;
   width: 60%;
 }
 
@@ -163,6 +167,11 @@ section .bg-color .row .text-area a {
   width: -moz-max-content;
   width: max-content;
   border-bottom: 1px solid #3c9f8f;
+}
+
+section .bg-color .row .text-area a:hover, section .bg-color .row .text-area a:focus {
+  color: #51bdab;
+  border-bottom-color: #51bdab;
 }
 
 section .bg-color .row .text-area a i {
@@ -218,13 +227,108 @@ aside .d-flex {
   gap: 5em;
 }
 
-aside .d-flex form input, aside .d-flex form button {
-  display: block;
+aside .d-flex form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+}
+
+aside .d-flex form input {
+  width: 100%;
+  padding: 1em 2em;
+}
+
+aside .d-flex form button {
+  min-width: 100px;
+  max-width: 200px;
+  background-color: #3065f8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 1em;
+}
+
+aside .d-flex form button:hover, aside .d-flex form button:focus {
+  background-color: #628af9;
 }
 
 footer {
   background-color: #070439;
   color: #fff;
-  padding: 5em 0;
+  padding: 5em 0 1em 0;
+  font-size: 14px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+}
+
+footer a:hover, footer a:focus {
+  color: #585989;
+}
+
+footer .btm-logo {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  margin-bottom: 1em;
+}
+
+footer .col {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .col .col-1, footer .col .col-2, footer .col .col-3 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+}
+
+footer .col .phone, footer .col .mail {
+  gap: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .col .phone img, footer .col .mail img {
+  height: 1.25em;
+}
+
+footer .col .phone p, footer .col .mail p {
+  margin-bottom: 0;
+}
+
+footer .col .col-4 {
+  gap: 1em;
+}
+
+footer .col .col-4 i {
+  border: 1px solid #fff;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 0.5em;
+  border-radius: 10em;
+  cursor: pointer;
+}
+
+footer .col .col-4 i:hover, footer .col .col-4 i:focus {
+  color: #585989;
+  border: 1px solid #585989;
+}
+
+footer .col .col-4 .fa-facebook-f {
+  padding: 0.5em 0.7em;
+}
+
+footer .attribution {
+  margin-top: 3em;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

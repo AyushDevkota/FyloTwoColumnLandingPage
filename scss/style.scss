@@ -22,19 +22,23 @@ header {
     }
     .intro {
         form {
-            margin-top: 2em;
+            margin-top: 1em;
             button {
                 font-size: 12px;
-                padding: 0.4em 2em;
+                padding: 0.85em 1em;
                 width: 30%;
                 margin-left: 2em;
                 height: 100%;
                 background-color: $bright-blue;
                 border: none;
                 color: hsl(0, 0, 90%);
+                cursor: pointer;
+                &:hover, &:focus {
+                    background-color: lighten($bright-blue, 10%);
+                }
             }
             input {
-                padding: 0.35em 1em;
+                padding: 0.85em 1em;
                 width: 60%;
             }
             ::placeholder {
@@ -63,6 +67,10 @@ section {
                     color: $moderate-cyan;
                     width: max-content;
                     border-bottom: 1px solid $moderate-cyan;
+                    &:hover, &:focus {
+                        color: lighten($moderate-cyan, 10%);
+                        border-bottom-color: lighten($moderate-cyan, 10%);
+                    }
                     i {
                         margin-left: 0.25em;
                         height: 0.1em;
@@ -109,8 +117,23 @@ aside {
     .d-flex {
         gap: 5em;
         form {
-            input, button {
-                display: block;
+            flex-direction: column;
+            gap: 1em;
+            input {
+                width: 100%;
+                padding: 1em 2em;
+            }
+            button {
+                min-width: 100px;
+                max-width: 200px;
+                background-color: $bright-blue;
+                border: none;
+                color: #fff;
+                cursor: pointer;
+                padding: 1em;
+                &:hover, &:focus {
+                    background-color: lighten($bright-blue, 10%);
+                }
             }
         }
     }
@@ -119,5 +142,55 @@ aside {
 footer {
     background-color: $very-dark-blue;
     color: #fff;
-    padding: 5em 0;
+    padding: 5em 0 1em 0;
+    font-size: 14px;
+    a {
+        color: #fff;
+        font-size: 14px;
+        &:hover, &:focus {
+            color: $desaturated-blue;
+        }
+    }
+    .btm-logo {
+        filter: brightness(0) invert(1);
+        margin-bottom: 1em;
+    }
+    .col {
+        justify-content: space-between;
+        .col-1, .col-2, .col-3 {
+            flex-direction: column;
+            gap: 1em;
+        }
+        .phone, .mail {
+            gap: 1em;
+            align-items: center;
+            img {
+                height: 1.25em;
+            }
+            p {
+                margin-bottom: 0;
+            }
+        }
+        .col-4 {
+            gap: 1em;
+            i {
+                border: 1px solid #fff;
+                align-self: flex-start;
+                padding: 0.5em;
+                border-radius: 10em;
+                cursor: pointer;
+            }
+            i:hover, i:focus {
+                color: $desaturated-blue;
+                border: 1px solid $desaturated-blue;
+            }
+            .fa-facebook-f {
+                padding: 0.5em 0.7em;
+            }
+        }
+    }
+    .attribution {
+        margin-top: 3em;
+        text-align: center;
+    }
 }

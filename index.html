@@ -37,7 +37,7 @@
   </header>
 
   <section>
-    <img src="images/bg-curve-desktop.svg" alt="">
+    <img src="images/bg-curve-desktop.svg" alt="background">
     <div class="bg-color">
       <div class="d-flex row container">
         <div class="text-area d-flex">
@@ -50,7 +50,7 @@
             <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
             <div class="d-flex">
               <div class="img-area">
-                <img src="images/avatar-testimonial.jpg" alt="">
+                <img src="images/avatar-testimonial.jpg" alt="Kyle Burton">
               </div>
               <div class="text-area d-flex">
                 <p>Kyle Burton</p>
@@ -72,8 +72,8 @@
         <h2>Get early access today</h2>
         <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
       </div>
-      <form class="img-area">
-        <input type="email" name="email" id="aside-email" placeholder="email@example.com">
+      <form class="img-area d-flex">
+        <input type="email" name="email" id="aside-email" placeholder="email@example.com" required>
         <button>Get Started For Free</button>
       </form>
     </div>
@@ -81,18 +81,38 @@
 
   <footer>
     <div class="container">
-      Phone: +1-543-123-4567
-      example@fylo.com
-      About Us
-      Jobs
-      Press
-      Blog
-      Contact Us
-      Terms
-      Privacy
+      <img src="images/logo.svg" alt="company logo" class="btm-logo">
+      <div class="d-flex col">
+        <div class="col-1 d-flex">
+          <div class="phone d-flex">
+            <img src="images/icon-phone.svg" alt="phone">
+            <p>Phone: +1-543-123-4567</p>
+          </div>
+          <div class="mail d-flex">
+            <img src="images/icon-email.svg" alt="email">
+            <p> example@fylo.com</p>
+          </div>
+        </div>
+        <div class="col-2 d-flex">
+          <a href="">About Us</a>
+          <a href="">Jobs</a>
+          <a href="">Press</a>
+          <a href="">Blog</a>
+        </div>
+        <div class="col-3 d-flex">
+          <a href="">Contact Us</a>
+          <a href="">Terms</a>
+          <a href="">Privacy</a>
+        </div>
+        <div class="col-4 d-flex">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
       <p class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
+        Coded by <a href="https://github.com/AyushDevkota" target="_blank">Ayush Devkota</a>.
       </p>
     </div>
   </footer>
