@@ -194,3 +194,84 @@ footer {
         text-align: center;
     }
 }
+
+@media (max-width: 800px) {
+    .row {
+        flex-direction: column;
+        .img-area {
+            order: -2;
+        }
+        .img-area {
+            margin: 0 auto;
+            img {
+                max-height: 300px;
+                width: auto;
+                margin: 0 auto;
+            }
+        }
+        .text-area {
+            text-align: center;
+        }
+    }
+    header {
+        .intro {
+            .text-area {
+                input, button {
+                    display: block;
+                    width: 100%;
+                }
+                button {
+                    margin-left: 0;
+                    margin-top: 1em;
+                }
+            }
+        }
+    }
+    section {
+        .text-area {
+            p {
+                text-align: start;
+            }
+            a, .card {
+                margin: 1em auto;
+            }
+            .card {
+                .img-area {
+                    width: max-content;
+                    margin: 0;
+                }
+                .quote {
+                    position: relative;
+                    top: 0;
+                    left: -48%;
+                }
+            }
+        }
+    }
+    aside {
+        text-align: center;
+        .d-flex {
+            flex-direction: column;
+            form {
+                input, button {
+                    display: block;
+                    width: 80%;
+                    margin: 0 auto;
+                }
+                button {
+                    min-width: auto;
+                    max-width: none;
+                }
+            }
+        }
+    }
+    footer {
+        .col {
+            flex-direction: column;
+            gap: 3em;
+            .col-4 {
+                align-self: center;
+            }
+        }
+    }
+}
